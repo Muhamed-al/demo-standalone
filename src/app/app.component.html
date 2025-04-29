@@ -1,0 +1,12 @@
+
+<router-outlet />
+
+<div style="border: 1px solid black; padding: 10px;">
+    <h1>Parent  Component</h1>
+    <input type="text" [(ngModel)]="name">
+
+    <app-user [name]="name"> 
+      <p>Bonjour from parent</p>
+    </app-user>
+</div>
+
