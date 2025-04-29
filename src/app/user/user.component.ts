@@ -5,8 +5,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-user',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  standalone: true, // permet de rendre le composant autonome (sans avoir declarer dans le module principal)
+  imports: [CommonModule, ReactiveFormsModule], // permet d'importer les modules nécessaires
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
